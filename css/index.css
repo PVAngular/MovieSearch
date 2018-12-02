@@ -1,0 +1,34 @@
+.container-popover {
+  border: 2px solid black;
+  width: 30%;
+  padding: 15px;
+  background-color: white;
+  border-radius: 50px;
+  position: absolute;
+  top: 10px;
+  right: -143px;
+  z-index: 99;
+}
+
+.movie-card-container {
+    float: left;
+    margin-right: 20px;
+    position: relative;
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.search-container {
+    margin-top: 2%;
+    margin-left:4%;
+}
+
+.search-box {
+    margin-bottom: 20px;
+    background-color: gray;
+    text-align: center;
+}
+.search-field {
+    border: 2px solid black;
+}
