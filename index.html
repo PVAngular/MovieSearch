@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Movie Search </title>
     <link  rel="stylesheet" href="css/index.css">
 
@@ -11,13 +12,15 @@
 <div class="search-container">
 
     <div class="search-box">
-        <input type="text" class="search-field" onkeydown="search(event)"></input>
+        <input type="text" class="search-field" onkeyup="search(event)"></input>
     </div>
     <div id="movie-container">
 
     </div>
 </div>
 <script type="text/javascript" src="index.js"></script>
+<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch"></script>
+
 </body>
 
 </html>

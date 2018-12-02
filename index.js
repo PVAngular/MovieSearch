@@ -7,22 +7,15 @@ function handleImageError(event) {
 }
 //given a search term - retrieve the list of movies
 function search(evt) {
-    evt = (evt) ? evt : (window.event) ? event : null;
-    if (evt)
-    {
-        //for browser compatibility
-        var charCode = (evt.charCode) ? evt.charCode :((evt.keyCode) ? evt.keyCode :((evt.which) ? evt.which : 0));
-        console.log("typed ",  evt.currentTarget.value + "value", String.fromCharCode(evt.keyCode), (evt.currentTarget.value + String.fromCharCode(evt.keyCode)));
-        var searchTerm = "";
-        //this means it is a backspace - so truncate the last character
-        if(event.keyCode === 8 ){
-            searchTerm = evt.currentTarget.value.substring(0, evt.currentTarget.value.length-1 );
-        } else {
-            searchTerm =  evt.currentTarget.value + String.fromCharCode(evt.keyCode);
+        var searchTerm =  evt.currentTarget.value ;//+ String.fromCharCode(evt.keyCode);
+        //dont search on empty spaces
+        if (searchTerm) {
+            searchTerm = searchTerm.trim();
+            if (searchTerm.length > 0) {
+                getMovieShowFromSearchTerm(searchTerm);
+                console.log("searchTerm ", searchTerm);
+            }
         }
-        console.log("searchTerm ", searchTerm);
-        getMovieShowFromSearchTerm(searchTerm);
-    }
 }
 
 function getMovieShowFromSearchTerm(searchTerm) {
