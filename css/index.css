@@ -5,8 +5,8 @@
   background-color: white;
   border-radius: 50px;
   position: absolute;
-  top: 10px;
-  right: -143px;
+  top: 15px;
+  left: -15px;
   z-index: 99;
 }
 
