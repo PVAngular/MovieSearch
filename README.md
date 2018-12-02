@@ -16,4 +16,4 @@ For some mobile devices, there may be extra space next to Movie cards(which have
 Added "touchstart" event to support mobile device tap(to display additional info  on the movie)
 
 **Movie Results Pagination**
-I looked at the OMDBAPI documentation and couldnt find how many results were considered too many. I was planning on implementing pagination on UI in case the API took a long time to process certain searchterms.But, I havent found any searchterms for which the API seemed to take a long time - so didnt really address this.
+I looked at the OMDBAPI documentation and couldnt find how many results were considered too many by the API. I was planning on implementing pagination on UI in case the API took a long time to process certain searchterms.But, I havent found any searchterms for which the API seemed to take a long time - so didnt really address this.
