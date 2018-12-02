@@ -12,5 +12,5 @@ Added a polyfill js to support window.fetch API call on IE Edge(some versions of
 
 **Mobile support**
 Added responsive meta tag in index.html to support scaling of browser width.
-For some mobile devices, there may be extra space next to Movie cards(which have poster, title , etc) in each row but no overlap or truncation of data
-added "touchstart" event to support mobile device tap(to display additional info  on the movie)
+For some mobile devices, there may be extra space next to Movie cards(which have poster, title , etc) in each row but no overlap or truncation of data.
+Added "touchstart" event to support mobile device tap(to display additional info  on the movie)
