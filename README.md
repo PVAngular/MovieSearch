@@ -14,3 +14,6 @@ Added a polyfill js to support window.fetch API call on IE Edge(some versions of
 Added responsive meta tag in index.html to support scaling of browser width.
 For some mobile devices, there may be extra space next to Movie cards(which have poster, title , etc) in each row but no overlap or truncation of data.
 Added "touchstart" event to support mobile device tap(to display additional info  on the movie)
+
+**Movie Results Pagination**
+I looked at the OMDBAPI documentation and couldnt find how many results were considered too many. I was planning on implementing pagination on UI in case the API took a long time to process certain searchterms.But, I havent found any searchterms for which the API seemed to take a long time - so didnt really address this.
